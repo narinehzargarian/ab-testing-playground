@@ -4,6 +4,7 @@ import Home from '@spectrum-icons/workflow/Home';
 import ShoppingCart from '@spectrum-icons/workflow/ShoppingCart';
 import GraphBarVertical from '@spectrum-icons/workflow/GraphBarVertical';
 import Education from '@spectrum-icons/workflow/Education';
+import FileAdd from '@spectrum-icons/workflow/FileAdd';
 import RealTimeCustomerProfile from '@spectrum-icons/workflow/RealTimeCustomerProfile';
 import { useState } from 'react';
 import UserSwitcher from './UserSwitcher';
@@ -13,6 +14,7 @@ const navItems = [
   { path: '/', label: 'Landing', icon: <Home /> },
   { path: '/pricing', label: 'Pricing', icon: <ShoppingCart /> },
   { path: '/onboarding', label: 'Onboarding', icon: <Education /> },
+  { path: '/upload', label: 'Upload', icon: <FileAdd /> },
   { path: '/dashboard', label: 'Dashboard', icon: <GraphBarVertical /> },
 ];
 

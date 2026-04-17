@@ -157,5 +157,18 @@ export const experiments = [
         props: { showTutorial: false }
       }
     ]
+  },
+  {
+    id: 'exp_upload_experience',
+    name: 'Upload Experience Test',
+    description: 'Testing whether drag-and-drop, click-to-browse, or combined upload drives more successful uploads.',
+    status: 'running',
+    type: 'ab',
+    targetMetric: 'upload_complete',
+    variants: [
+      { id: 'control', name: 'Drag & Drop', weight: 34, props: { uploadStyle: 'drag-drop' } },
+      { id: 'click_browse', name: 'Click to Browse', weight: 33, props: { uploadStyle: 'click-browse' } },
+      { id: 'combined', name: 'Combined', weight: 33, props: { uploadStyle: 'combined' } }
+    ]
   }
 ];

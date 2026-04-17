@@ -571,6 +571,64 @@ body {
 }
 
 /* ============================
+   Upload Page
+   ============================ */
+
+.upload-page {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.upload-dropzone {
+  border: 2px dashed #ccc;
+  border-radius: 16px;
+  padding: 60px 40px;
+  text-align: center;
+  background: #fafafa;
+  transition: border-color 0.2s, background 0.2s;
+  cursor: pointer;
+  width: 100%;
+}
+
+.upload-dropzone-active {
+  border-color: #c62828;
+  background: rgba(198, 40, 40, 0.05);
+}
+
+.upload-dropzone-done {
+  border-color: #2ea44f;
+  background: #e6f4ea;
+}
+
+.upload-icon {
+  font-size: 48px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.upload-file-name {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+  display: block;
+}
+
+.upload-success {
+  color: #2ea44f;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.upload-browse-card {
+  background: white;
+  border-radius: 16px;
+  padding: 60px 40px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+}
+
+/* ============================
    Debug Panel
    ============================ */
 
@@ -871,6 +929,11 @@ body {
 
   .event-log {
     overflow-x: auto;
+  }
+
+  .upload-dropzone,
+  .upload-browse-card {
+    padding: 40px 20px;
   }
 
   .debug-panel-container {

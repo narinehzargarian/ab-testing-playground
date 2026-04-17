@@ -5,6 +5,7 @@ import LandingPage from './pages/LandingPage';
 import PricingPage from './pages/PricingPage';
 import DashboardPage from './pages/DashboardPage';
 import OnboardingPage from './pages/OnboardingPage';
+import UploadPage from './pages/UploadPage';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
             <Route index element={<LandingPage />} />
             <Route path="pricing" element={<PricingPage />} />
             <Route path="onboarding" element={<OnboardingPage />} />
+            <Route path="upload" element={<UploadPage />} />
             <Route path="dashboard" element={<DashboardPage />} />
           </Route>
         </Routes>
